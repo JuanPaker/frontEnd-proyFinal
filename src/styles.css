@@ -1,0 +1,77 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .bg {
+    /* The image used */
+   background-image: url("../src/assets/fondo4.jpg");
+  
+    /* Full height */
+    /*height: 100%;*/ 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ h1, h5{
+    margin-top: revert;
+    color: #E5E8E8 ;
+}
+
+#acerca{
+    margin-left: 40%;
+    width: 50%;
+    margin-top: -8%;
+    margin-bottom: 10%;
+}
+
+div{
+    text-align: center;
+}
+
+.texto{
+    color: #E5E8E8 ;
+}
+
+/*estilo parrafo nombre*/
+#nombre{
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    color: #E5E8E8 ;
+    margin-top: 0%;
+    margin-left: -4%;
+}
+
+/*estilo parrafo titulo*/
+
+#titulo{
+    font-size: 22px;
+    font-weight: lighter;
+    color: #E5E8E8 ;
+    margin-top: -3%;
+    margin-left: -7%;
+}
+
+/* cambios en foto perfil*/
+
+    @media (min-width: 576px){
+        #fotoperfil{
+            position: relative;
+            border-radius: 30%;
+            box-shadow: 3px 3px 3px grey;
+            left: 30%;
+            top: -40px;
+            }
+    }
+    @media (max-width: 575px){
+        #fotoperfil{
+            position: initial;
+            border-radius: 30%;
+            box-shadow: 3px 3px 3px grey;
+            left: 2%;
+            top: 102px;
+            }
+        }

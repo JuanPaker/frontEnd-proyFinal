@@ -1,0 +1,22 @@
+
+/* Este modulo esta correcto*/
+
+.row {
+
+    position: relative;
+    /*background-color: transparent(10,10,10,10);*/
+   
+  }
+  
+  .row .contenido {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    left: 60%;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #E5E8E8 ; /* Grey text */
+    width: 38%; /* Full width */
+    height: 30%;
+    padding: 20px; /* Some padding */
+  }
+  
