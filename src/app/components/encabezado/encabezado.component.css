@@ -17,13 +17,13 @@ app-redes-sociales{
 }
 
 #logoAP{
-    width: 200px;
-    margin-left:10%;
+    width: 240px;
+    margin-left: 6%;
 }
 
     .redes{
         margin-top: 8%;
-        float: right;
+        float: inline-start;
         
     }
     #icon{

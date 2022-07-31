@@ -1,60 +1,79 @@
 <div class="Experiencia">
-    <h1>Experiencia laboral</h1>
-    <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-md-3 ">
-          <div class="card">
-            <div class="img1"><img src="../../../assets/logo arcor.jpg" id="arcor"></div>
-            <!--<div class="img2"><img src="../../../assets/logo arcor.jpg"></div>-->
-            <div class="main-text">
-              <h2> Person One</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quos voluptate ducimus soluta aut, dolores dolor commodi iste error officia amet quasi deserunt excepturi, ratione fugiat reprehenderit architecto vitae.</p>
-            </div>
-            <div class="socials">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-facebook"></i>  
-              <i class="fa fa-facebook"></i>  
-            </div>
+  <h1>Experiencia laboral</h1>
+</div>
+  <div class="container">
+  <!--      Aqui inicia la tarjeta-->
+      <ul id="lista">
+        <li *ngFor="let experiencias of datosExp.userExp">
+  <!--    <div> -->
+        <div class="card">
+          <div class="imagen">
+            <div class="img1"><img [src]="experiencias.url_img_empresa"></div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="img2"><img src="../../../assets/refinor.png" id="refinor"></div>
-            <!--<div class="img2"><img src="../../../assets/logo arcor.jpg"></div>-->
-            <div class="main-text">
-              <h2> Person One</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quos voluptate ducimus soluta aut, dolores dolor commodi iste error officia amet quasi deserunt excepturi, ratione fugiat reprehenderit architecto vitae.</p>
-            </div>
-            <div class="socials">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-facebook"></i>  
-              <i class="fa fa-facebook"></i>  
-            </div>
+          <div class="main-text">
+            <h2>{{experiencias.puesto}}</h2>
+            <p>{{experiencias.descripcion}}</p>
           </div>
+          
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="img2"><img src="../../../assets/edet.png"></div>
-            <!--<div class="img2"><img src="../../../assets/logo arcor.jpg"></div>-->
-            <div class="main-text">
-              <h2> Person One</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quos voluptate ducimus soluta aut, dolores dolor commodi iste error officia amet quasi deserunt excepturi, ratione fugiat reprehenderit architecto vitae.</p>
-            </div>
-            <div class="socials">
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-facebook"></i>  
-              <i class="fa fa-facebook"></i>  
-            </div>
+   <!--     </div>  -->
+      
+      <br>
+    </li> 
+  </ul>
+      <!--Aqui finaliza la tarjeta-->
+
+      </div>
+<!--</div>-->
+
+
+
+
+
+<!--
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="img2"><img src="../../../assets/refinor.png" id="refinor"></div>
+          <!--<div class="img2"><img src="../../../assets/logo arcor.jpg"></div>-->
+         <!-- <div class="main-text">
+            <h2> Person One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quos voluptate ducimus soluta aut,
+              dolores dolor commodi iste error officia amet quasi deserunt excepturi, ratione fugiat reprehenderit
+              architecto vitae.</p>
+          </div>
+          <div class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-  
-  
-  
-  <!--  Carrusel de fotos: 
+      <div class="col-md-3">
+        <div class="card">
+          <div class="img2"><img src="../../../assets/edet.png"></div>
+          <!--<div class="img2"><img src="../../../assets/logo arcor.jpg"></div>-->
+         <!-- <div class="main-text">
+            <h2> Person One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi quos voluptate ducimus soluta aut,
+              dolores dolor commodi iste error officia amet quasi deserunt excepturi, ratione fugiat reprehenderit
+              architecto vitae.</p>
+          </div>
+          <div class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-facebook"></i>
+          </div>
+        </div>
+      </div>
+    --> 
+    
+
+
+
+
+
+<!--  Carrusel de fotos: 
     
     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
       <div class="carousel-inner">

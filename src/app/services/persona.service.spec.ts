@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { PersonaService } from './persona.service';
 
 describe('PersonaService', () => {

@@ -1,21 +1,25 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="../../../assets/cara.jpg" class="img-fluid" id="fotoperfil">
-        <!-- para las imagenes se utiliza de esta forma:
-        <img [src]="misDatos.url_img_perfil">
-        -->
+       <!--<img src="../../../assets/cara.jpg" class="img-fluid" id="fotoperfil">
+         para las imagenes se utiliza de esta forma:-->
+         <img [src]="misDatos.urlImgPerfil" class="img-fluid" id="fotoperfil">
+        
     </div>
     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
         <p id="nombre">{{misDatos.nombre}} {{misDatos.apellido}}</p>
-        <p id="titulo">Full Stack developer Jr</p>
+        <p id="titulo">{{misDatos.ocupacion}}</p>
+        <!--<p id="nombre">{{misDatos.nombre}} {{misDatos.apellido}}</p>
+        <p id="titulo">{{misDatos.ocupacion}} Full Stack developer Jr</p>-->
     </div>
 </div>
     <div id="acerca" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <span>
             <h5>Acerca de mi</h5>
-            <p class="texto">Lorem ipsum, dolor sit 
-                amet consectetur adipisicing elit. 
-                Magni voluptates vel eveniet ipsum adipisci ipsam inventore
+            <p class="texto">
+                {{misDatos.acercaDe}}
                 </p>
         </span>
+
+      <button type="button" class="btn btn-primary" (click)="editarPersona(misDatos.id)"> Editar perfil </button>
+
     </div>

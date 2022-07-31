@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class AutenticacionService {
   //aqui va la url de la api para la autenticacion.
-  url="localhost:8080/personas/crear";
-
+  url="localhost:8080/login";
+  //url="https://api.solodata.es/";
   currentUserSubject: BehaviorSubject<any>;
 
   constructor(private http:HttpClient) { 

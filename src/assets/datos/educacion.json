@@ -1,0 +1,26 @@
+{"educacion":[
+    {
+    "nivel":"universitario",
+    "titulo":"ingeniero",
+    "imagen1":"imagen1",
+    "imagen2":"imagen2"
+},
+{
+    "nivel":"secundario",
+    "titulo":"tecnico",
+    "imagen1":"imagen1",
+    "imagen2":"imagen2"
+},
+{
+    "nivel":"primario",
+    "titulo":"nada",
+    "imagen1":"imagen1",
+    "imagen2":"imagen2"
+},
+{
+    "nivel":"primario",
+    "titulo":"nada",
+    "imagen1":"imagen1",
+    "imagen2":"imagen2"
+}
+]}

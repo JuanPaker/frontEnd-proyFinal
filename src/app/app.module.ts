@@ -12,8 +12,13 @@ import { ExperienciaLaboralComponent } from './components/experiencia-laboral/ex
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PorfolioComponent } from './components/porfolio/porfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { AcercaDeEditComponent } from './components/acerca-de-edit/acerca-de-edit.component';
+import { PorfolioEditComponent } from './components/porfolio-edit/porfolio-edit.component';
+import { EducacionEditComponent } from './components/educacion-edit/educacion-edit.component';
+import { EduFormComponent } from './components/forms/edu-form/edu-form.component';
+
 
 @NgModule({
   declarations: [
@@ -26,13 +31,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     ExperienciaLaboralComponent,
     ProyectosComponent,
     InicioSesionComponent,
-    PorfolioComponent
+    PorfolioComponent,
+    AcercaDeEditComponent,
+    PorfolioEditComponent,
+    EducacionEditComponent,
+    EduFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

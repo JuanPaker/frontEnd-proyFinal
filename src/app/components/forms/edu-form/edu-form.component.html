@@ -1,0 +1,35 @@
+<div class="container">
+  <br>
+    <form [formGroup]="educacion" (ngSubmit) = "postForm(educacion.value)"> <!-- (ngSubmit)="postForm(acerca.value)">  //esto es de jose aleman -->
+  
+     <button type="submit" class="btn btn-primary" > Guardar </button> 
+     <!--<button type="button" class="btn btn-danger" (click)="nuevo(acerca)" > Eliminar </button> -->
+  
+     <!-- <button type="submit" class="btn btn-primary" (click)="editarPersona()" > Guardar </button> -->
+  
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Id" aria-label="Id" aria-describedby="basic-addon2" formControlName="id">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Carrera" aria-label="carrera" aria-describedby="basic-addon2" formControlName="carrera">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Establecimiento" aria-label="establecimiento" aria-describedby="basic-addon2" formControlName="establecimiento">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Fecha fin" aria-label="fecha fin" aria-describedby="basic-addon2" formControlName="fecha fin">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Fecha inicio" aria-label="fecha inicio" aria-describedby="basic-addon2" formControlName="fecha inicio">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Titulo" aria-label="titulo" aria-describedby="basic-addon2" formControlName="titulo">
+  </div>
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Logo establecimiento" aria-label="urlImgEstablecimiento" aria-describedby="basic-addon2" formControlName="urlImgEstablecimiento">
+  </div>
+    </form>
+  </div>
