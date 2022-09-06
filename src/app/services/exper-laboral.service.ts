@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ExperLaboralService {
 
-  url: String = 'http://localhost:8080/personas';
+  url: String = 'https://aqueous-falls-89804.herokuapp.com/personas';
   
   constructor(private http:HttpClient) { }
 

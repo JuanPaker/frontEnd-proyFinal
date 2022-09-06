@@ -12,7 +12,8 @@ import { personaI } from '../Interfaces/persona.interface';
 })
 export class PersonaService {
 
-    url:String = 'http://localhost:8080/personas';
+  url:String = 'https://aqueous-falls-89804.herokuapp.com/personas';  
+  //url:String = 'http://localhost:8080/personas';
   
   constructor(private http:HttpClient) {}
     
