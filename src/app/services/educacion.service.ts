@@ -9,7 +9,7 @@ import { educacionI } from '../Interfaces/EduInterface';
 })
 export class EducacionService {
 
-  url:String = "https://aqueous-falls-89804.herokuapp.com";
+  url:String = 'https://aqueous-falls-89804.herokuapp.com';
 
   constructor(private http:HttpClient) { }
 
