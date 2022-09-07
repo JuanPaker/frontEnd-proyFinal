@@ -9,12 +9,12 @@ import { educacionI } from '../Interfaces/EduInterface';
 })
 export class EducacionService {
 
-  url:String = 'https://aqueous-falls-89804.herokuapp.com/personas';
+  url:String = "https://aqueous-falls-89804.herokuapp.com";
 
   constructor(private http:HttpClient) { }
 
   obtenerDatosEducacion():Observable<educacionI[]>{
-    let direccion = this.url + '/traer/perfil/';
+    let direccion = this.url + '/personas/traer/perfil/';
     return this.http.get<educacionI[]>(direccion);
     //return this.http.get<educacionI>[](this.url + '/ver' + id);
     //return this.http.get<educacionI>('http://localhost:8080/personas/traer/perfil');

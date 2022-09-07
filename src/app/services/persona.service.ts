@@ -12,14 +12,14 @@ import { personaI } from '../Interfaces/persona.interface';
 })
 export class PersonaService {
 
-  url:String = 'https://aqueous-falls-89804.herokuapp.com/personas';  
+  url:String = "https://aqueous-falls-89804.herokuapp.com";  
   //url:String = 'http://localhost:8080/personas';
   
   constructor(private http:HttpClient) {}
     
 
   obtenerDatos():Observable<personaI>{
-    return this.http.get<personaI>(this.url + '/traer/perfil')
+    return this.http.get<personaI>(this.url + '/personas/traer/perfil')
   }
 
   // obtenerDatos():Observable<personaI>{
@@ -27,23 +27,23 @@ export class PersonaService {
   // }
 
   buscarPersona(id: number|any):Observable<personaI>{
-    let direccion = this.url + '/buscar/' + id;
+    let direccion = this.url + '/personas/buscar/' + id;
     return this.http.get<personaI>(direccion);
   }
   
   crearPersona(form:acerdaDeInterface):Observable<any>{
-    let direccion = this.url + '/crear';
+    let direccion = this.url + '/personas/crear';
     return this.http.post<any>(direccion, form);
 
   }
 
   traerPersona():Observable<acerdaDeInterface>{
-    let direccion = this.url + '/traer/perfil';
+    let direccion = this.url + '/personas/traer/perfil';
     return this.http.get<acerdaDeInterface>(direccion);
   }
     // de jose aleman
   editarPersona(form:personaI):Observable<any>{
-    let direccion = this.url + '/editar/' + form.id;
+    let direccion = this.url + '/personas/editar/' + form.id;
     return this.http.put<personaI>(direccion, form);
   }    
   
